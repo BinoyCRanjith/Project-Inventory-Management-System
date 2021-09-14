@@ -13,7 +13,7 @@ namespace OneTeamAptitudeMVC.Controllers
 {
     public class CustomerController : Controller
     {
-        // GET: Customer
+        // GET: Customers
         public ActionResult CustomerHomeMain()
         {
             DbRequestBase request = new DbRequestBase
