@@ -1,0 +1,175 @@
+﻿@model List<OneTeamAptitudeMVC.Models.ExamStats>
+
+
+
+@using (Html.BeginForm("ExamPractice", "User", FormMethod.Post))
+{
+    <div class="sidebar" data-color="green">
+        <div class="logo">
+            <h1>Aptitude Portal</h1>
+        </div>
+        <div class="sidebar-wrapper">
+            <ul class="nav">
+                <li>
+                    <a href="~/User/Index">
+                        <i class="fa fa-university"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+
+                @*<li>
+            <a href="./typography.html">
+                <i class="now-ui-icons text_caps-small"></i>
+                <p>Typography</p>
+            </a>
+        </li>*@
+                <li class="active">
+                    <a href="~/User/ExamPractice">
+                        <i class="fa fa-book"></i>
+                        <p>Exam Practice</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/Account/ChangePassword">
+                        <i class="fa fa-user-secret"></i>
+                        <p>Change Password</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/Account/LogOut">
+                        <i class="fa fa-sign-out-alt"></i>
+                        <p>Logout</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="main-panel" style="background-color:white;">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent  bg-primary  navbar-absolute">
+
+            <div class="container-fluid">
+                <div class="navbar-wrapper">
+                    <div class="navbar-toggle">
+                        <button type="button" class="navbar-toggler">
+                            <span class="navbar-toggler-bar bar1"></span>
+                            <span class="navbar-toggler-bar bar2"></span>
+                            <span class="navbar-toggler-bar bar3"></span>
+                        </button>
+                    </div>
+                    <a class="navbar-brand" href="#pablo">Dashboard</a>
+                </div>
+            </div>
+        </nav>
+        <div class="content" style="margin-top:5px;">
+
+            <div class="row">
+                <div class="col-md-8">
+
+                    <img src="~/Images/OnetEAMSOLUTIONS.png" class="img-responsive" alt="One Team Aptitude Portal" />
+
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var item in Model)
+                {
+
+                    <div class="col-md-3">
+                        <div class="card" style="background-color:darkcyan;border-radius:10px;">
+                            <div class="card-body">
+                                <div style="background-color:white;">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                @Html.Label("Category ")
+                                            </td>
+                                            <td style="margin-left:5px">
+                                                @Html.DisplayFor(Model => item.QuestionCategory.Name)
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                @Html.Label("Passmark ")
+
+                                            </td>
+                                            <td style="margin-left:5px">
+                                                @Html.DisplayFor(Model => item.Passmark)
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                @Html.Label("Total Question ")
+
+                                            </td>
+                                            <td style="margin-left:5px">
+                                                @Html.DisplayFor(Model => item.TotalQuestion)
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                @Html.Label("Time For Exam ")
+
+                                            </td>
+                                            <td style="margin-left:5px">
+                                                @Html.DisplayFor(Model => item.TimeForExam) Mins
+
+                                            </td>
+                                        </tr>
+                                    </table>
+
+
+                                    @Html.HiddenFor(Model => item.QuestionCategory.Id)
+                                    @Html.HiddenFor(Model => item.TotalQuestion)
+                                    @ViewBag.message
+
+
+                                    @Html.ActionLink("start Exam", "QiuckExam", "Exam",new {CatId=item.QuestionCategory.Id,NoQn=item.Passmark }, new { @class = "btn btn-primary"})
+
+                                    @*<input type="submit" class="btn btn-primary" name="Submit" value="start Exam" />*@
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+
+
+
+}
+@section scripts
+    {
+    <script src="~/assets/js/canvasjs.min.js"></script>
+    <script>
+        function SubmitPage(CatId,NoOfQn)
+        {
+           
+            $.ajax({
+                url: "/Exam/QiuckExam",
+                data: "CatId=" + CatId + "&NoQn=" + NoOfQn,
+                type: "POST",
+                success: function (data) {
+                    // code here
+                  
+                },
+                error: function (passParams) {
+                    // code here
+                }
+            });
+
+
+
+        }
+    </script>
+    
+
+}
+
+
+

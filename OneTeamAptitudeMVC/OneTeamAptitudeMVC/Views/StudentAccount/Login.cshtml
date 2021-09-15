@@ -1,0 +1,57 @@
+﻿@model OneTeamAptitudeMVC.Models.UserData
+
+<div class="content" style="margin-top:5px;">
+
+    @using (Html.BeginForm("Validate", "StudentAccount", FormMethod.Post))
+    {
+        <div class="row center-block" style="width:380px;height:400px;margin-top:150px;">
+            <div class="card" style="background-color:darkcyan;border-radius:10px;">
+                <div class="card-body">
+                    <div style="background-color:white;">
+                        <div class="card-header">
+                            <label style="font-size:20px;">One Team Aptitude Portal</label>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "Email Address" })
+                                    @Html.ValidationMessageFor(p => p.Email, "", new { @class = "text-danger" })
+
+                                </div>
+                                <div class="form-group">
+                                    @Html.TextBoxFor(model => model.Password, new { @class = "form-control", @placeholder = "Password", @type = "password" })
+                                    @Html.ValidationMessageFor(p => p.Password, "", new { @class = "text-danger" })
+
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Login</button>
+                                @Html.ActionLink("Create new user", "InsertStudent", "Student", null, new { @class = "btn btn-primary" })
+                            </div>
+                            
+                            @Html.ValidationSummary()
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+

@@ -1,0 +1,75 @@
+﻿
+@model List<OneTeamAptitudeMVC.Models.StudentViewModel>
+<p>
+    @Html.ActionLink("Create New User", "AddEdit", "StudentJson", null, new { @class = "btn btn-primary" })
+</p>
+<div class="row">
+    <table id="editabledatatable" class="table table-striped table-hover table-bordered dt-responsive display" style=" margin-left: 36px !important;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+
+                <th>Password</th>
+
+                <th>Action</th>
+
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    @item.Phone
+                </td>
+
+                <td>
+                    @item.Password
+                </td>
+                <td>
+                    <div class="btn-group">
+                        <a class="btn btn-azure dropdown-toggle" data-toggle="dropdown">
+                            Actions&nbsp;&nbsp; <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-azure">
+
+                            <li>
+                                @Html.ActionLink("Edit", "AddEdit", "StudentJson", new { @id = item.Id }, new { @name = "edit" })
+
+                            </li>
+                            <li>
+                                @Html.ActionLink("Disable", "Delete", "Admin", new { @id = item.Id }, new { onclick = "return confirm('Are you sure?');" })
+
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </td>
+            </tr>
+
+        }
+
+
+
+    </table>
+</div>
+
+@section scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var message = "Message @TempData["Message"]";
+            if (message.length > 8) {
+                alert(message);
+            }
+        });
+    </script>
+}

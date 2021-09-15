@@ -1,0 +1,311 @@
+@model OneTeamAptitudeMVC.Models.Questions
+@{
+    ViewBag.Title = "EditQuestion";
+}
+
+
+@using (Html.BeginForm("EditQuestion", "Admin", FormMethod.Post))
+{
+    <div class="sidebar" data-color="green">
+        <div class="logo">
+            <h1>Aptitude Portal</h1>
+        </div>
+        <div class="sidebar-wrapper">
+            <ul class="nav">
+                <li>
+                    <a href="~/Admin/ExamResult">
+                        <i class="fa fa-university"></i>
+                        <p>Exam Result</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="~/Admin/Question">
+                        <i class="now-ui-icons education_atom"></i>
+                        <p>Apptitude Questions</p>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="~/Admin/Index">
+                        <i class="now-ui-icons users_single-02"></i>
+                        <p>User </p>
+                    </a>
+                </li>
+                @*<li>
+            <a href="=">
+                <i class="now-ui-icons ui-1_bell-53"></i>
+                <p>Notifications</p>
+            </a>
+        </li>*@
+                <li>
+                    <a href="~/Admin/LevelAssign">
+                        <i class="fa fa-gear fa-spin"></i>
+                        <p>Level Assign</p>
+                    </a>
+                </li>
+                @*<li>
+            <a href="./typography.html">
+                <i class="now-ui-icons text_caps-small"></i>
+                <p>Typography</p>
+            </a>
+        </li>*@
+                <li>
+                    <a href="~/Account/ChangePassword">
+                        <i class="fa fa-user-secret"></i>
+                        <p>Change Password</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="~/Account/LogOut">
+                        <i class="fa fa-sign-out-alt"></i>
+                        <p>Logout</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="main-panel" style="background-color:white;">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent  bg-primary  navbar-absolute">
+
+            <div class="container-fluid">
+                <div class="navbar-wrapper">
+                    <div class="navbar-toggle">
+                        <button type="button" class="navbar-toggler">
+                            <span class="navbar-toggler-bar bar1"></span>
+                            <span class="navbar-toggler-bar bar2"></span>
+                            <span class="navbar-toggler-bar bar3"></span>
+                        </button>
+                    </div>
+                    <a class="navbar-brand" href="#pablo">Dashboard</a>
+                </div>
+            </div>
+        </nav>
+        <div class="content" style="margin-top:5px;">
+            <div class="row">
+
+                <div class="col-md-8">
+                    @Html.Label("Category :")
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-tags"></i>
+                        </div>
+                        @Html.DropDownListFor(Model => Model.CatagoryId, new SelectList(ViewBag.QuestionCategory, "Id", "Name", "select"), new { @class = "form-control input-lg", @cols = "8", @onchange = "VisibleEditButton(this.value)" })
+                    </div>
+                    @Html.ValidationMessageFor(p => p.CatagoryId, "", new { @class = "text-danger" })
+                    <span id="SpanEditDeleteAdd">
+                        <input id="BtnAddNew" type="button" value="Add" class="btn btn-success" onclick="VisibleeditSpan(0)" />
+
+                        <input id="BtnEdit" type="button" value="Edit" class="btn btn-primary" onclick="VisibleeditSpan(1)" style="visibility: hidden" />
+
+                        <input id="BtnDelete" type="button" value="Delete" class="btn btn-danger" onclick="DeleteCategory()" style="visibility: hidden" />
+                    </span>
+
+
+
+                    <span style="visibility: hidden" id="SpanEditAddDeptSave">
+                        <input id="txtCat" type="text" class="form-control" placeholder="Type Here!" />
+                        <input id="BtnDeptSave" type="button" value="Save" class="btn btn-success" onclick="SaveCategory()" />
+
+                        <input id="BtnDeptCancel" type="button" value="cancel" class="btn btn-danger" onclick="hiddenAddNewSpan()" />
+
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    @Html.Label("Question :")
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-question-circle"></i>
+                        </div>
+                        @Html.TextAreaFor(Model => Model.Question, new { @class = "form-control" })
+                    </div>
+                    @Html.ValidationMessageFor(p => p.Question, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-md-8">
+
+                    @Html.Label("Option1 :")
+
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <div style="border:1px solid black;width:310px;border-top-right-radius:5px;border-bottom-right-radius:5px;height:35px">
+
+                            @Html.TextBoxFor(Model => Model.Option1, new { @class = "form-control", @id = "TxtOption1", @style = "border:none;z-index:10;" })
+                           
+                            @if(ViewBag.Option1 == ViewBag.CorrectAnswer)
+                            {
+                                @Html.RadioButtonFor(Model => Model.AnswerKey, "Option1", new { @for = "TxtOption1", @checked = true })
+                            }
+                            else
+                            {
+                                @Html.RadioButtonFor(Model => Model.AnswerKey, "Option1", new { @for = "TxtOption1" })
+                            }
+
+
+                        </div>
+                    </div>
+                    @Html.ValidationMessageFor(p => p.Question, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-md-8">
+                    @Html.Label("Option2 :")
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <div style="border:1px solid black;width:310px;border-top-right-radius:5px;border-bottom-right-radius:5px;height:35px">
+                            @Html.TextBoxFor(Model => Model.Option2, new { @class = "form-control", @id = "TxtOption2", @style = "border:none;z-index:10;" })
+                            @if (ViewBag.Option2 == ViewBag.CorrectAnswer)
+                            {
+                                @Html.RadioButtonFor(Model => Model.AnswerKey, "Option2", new { @for = "TxtOption2", @checked = true })
+                            }
+                            else
+                            {
+                                @Html.RadioButtonFor(Model => Model.AnswerKey, "Option2", new { @for = "TxtOption2" })
+                            }
+                        </div>
+                    </div>
+                    @Html.ValidationMessageFor(p => p.Question, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="col-md-8">
+
+                    @Html.Label("Option3 :")
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <div style="border:1px solid black;width:310px;border-top-right-radius:5px;border-bottom-right-radius:5px;height:35px">
+
+                            @Html.TextBoxFor(Model => Model.Option3, new { @class = "form-control", @id = "TxtOption3", @style = "border:none;z-index:10;" })
+
+                            @if (ViewBag.Option3 == ViewBag.CorrectAnswer)
+                            {
+                                @Html.RadioButtonFor(Model => Model.AnswerKey, "Option3", new { @for = "TxtOption3", @checked = true })
+                            }
+                            else
+                            {
+                                @Html.RadioButtonFor(Model => Model.AnswerKey, "Option3", new { @for = "TxtOption3" })
+                            }
+                        </div>
+
+                    </div>
+                    @Html.ValidationMessageFor(p => p.Question, "", new { @class = "text-danger" })
+
+
+                </div>
+                <div class="col-md-8">
+
+                    @Html.Label("Optioin4 :")
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <div style="border:1px solid black;width:310px;border-top-right-radius:5px;border-bottom-right-radius:5px;height:35px">
+
+                            @Html.TextBoxFor(Model => Model.Option4, new { @class = "form-control", @id = "TxtOption4", @style = "border:none;z-index:10;" })
+                            @if (ViewBag.Option4 == ViewBag.CorrectAnswer)
+                            {
+                                @Html.RadioButtonFor(Model => Model.AnswerKey, "Option4", new { @for = "TxtOption4", @checked = true })
+                            }
+                            else
+                            {
+                                @Html.RadioButtonFor(Model => Model.AnswerKey, "Option4", new { @for = "TxtOption4" })
+                            }
+
+                       
+                        </div>
+                    </div>
+                    @Html.ValidationMessageFor(p => p.Question, "", new { @class = "text-danger" })
+                </div>
+
+
+
+                <div class="col-md-8">
+                    @Html.ValidationMessageFor(p => p.AnswerKey, "", new { @class = "text-danger" })<br />
+                    <input id="Submit1" type="submit" value="submit" class="btn btn-success" style="padding-top:5px;" />
+                    <input id="Reset" type="reset" value="cancel" class="btn btn-danger" style="padding-top:5px;" />
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+}
+
+
+@section scripts
+{
+    <script>
+        function DeleteCat() {
+            var retVal = confirm("Do you want to Delete ?");
+            if (retVal == true) {
+                Myvar = document.getElementById('CatagoryId').value;
+                Or: __doPostBack(Myvar, "DeleteCat");
+
+            }
+
+        }
+        function VisibleEditButton() {
+            document.getElementById('BtnEdit').style.visibility = "visible";
+            document.getElementById('BtnDelete').style.visibility = "visible";
+
+        }
+        function VisibleeditSpan(a) {
+            document.getElementById('SpanEditDeleteAdd').style.visibility = "hidden";
+            document.getElementById('BtnEdit').style.visibility = "hidden";
+            document.getElementById('BtnDelete').style.visibility = "hidden";
+            document.getElementById('SpanEditAddDeptSave').style.visibility = "visible";
+            if (a == 1) {
+                var skillsSelect = document.getElementById("CatagoryId");
+                var selectedText = skillsSelect.options[skillsSelect.selectedIndex].text;
+                document.getElementById("txtCat").value = selectedText;
+                editIndicator = "true";
+            }
+
+
+
+        }
+        function hiddenAddNewSpan() {
+            document.getElementById('SpanEditAddDeptSave').style.visibility = "hidden";
+            document.getElementById('SpanEditDeleteAdd').style.visibility = "visible";
+
+
+
+
+            editIndicator = "false";
+
+        }
+
+        function SaveDept() {
+            if (editIndicator == "false") {
+                Myvar = document.getElementById('CatagoryId').value;
+                Or: __doPostBack(Myvar, "SaveCat");
+            }
+            else if (editIndicator == "true") {
+                Myvar = document.getElementById('CatagoryId').value;
+                Or: __doPostBack(Myvar, "UpdateCat");
+                editIndicator = "false";
+
+            }
+
+            //document.getElementById("ContentPlaceHolder1_txtDepartment").value = "";
+            document.getElementById('SpanEditAddDeptSave').style.visibility = "hidden";
+
+        }
+        function EditQns(d) {
+            Or: __doPostBack(d, "editQn");
+
+        }
+    </script>
+}
+
+

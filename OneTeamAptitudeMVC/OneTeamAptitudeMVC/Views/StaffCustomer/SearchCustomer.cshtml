@@ -1,0 +1,118 @@
+﻿@model List<OneTeamAptitudeMVC.Models.CustomerData>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topnav a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+</style>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="http://localhost:50492/StaffCustomer/CustomerHomeMain">Home</a>
+
+    </div>
+
+
+</body>
+
+<div class="row">
+    <table Id="editabledatatable" class="table table-striped table-hover table-bordered dt-responsive display" style=" margin-left: 36px !important;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+
+                <th>Address</th>
+
+                <th>Action</th>
+
+            </tr>
+        </thead>
+
+
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Email
+                    </td>
+                    <td>
+                        @item.Phonenumber
+                    </td>
+
+                    <td>
+                        @item.Address
+                    </td>
+                    <td>
+                        <div class="btn-group">
+                            <a class="btn btn-azure dropdown-toggle" data-toggle="dropdown">
+                                Actions&nbsp;&nbsp; <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-azure">
+
+                                <li>
+                                    @Html.ActionLink("Edit", "InsertCustomer", "Customer", new { @Id = item.Id }, new { @name = "Edit" })
+
+                                </li>
+                                <li>
+                                    @Html.ActionLink("Disable", "Delete", "Customer", new { @Id = item.Id }, new { onclick = "return confirm('Are you sure?');" })
+
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </td>
+                </tr>
+
+            }
+
+        }
+
+    </table>
+</div>
+
+@section scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var message = "Message @TempData["Message"]";
+            if (message.length > 8) {
+                alert(message);
+            }
+        });
+    </script>
+}
+

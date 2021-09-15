@@ -1,0 +1,162 @@
+﻿@model OneTeamAptitudeMVC.Models.PurchaseData
+@using (Html.BeginForm("Save", "Purchase", FormMethod.Post))
+{
+    @Html.HiddenFor(p => p.Id)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Purchase Updation</h1>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("ProductId :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @*@Html.TextBoxFor(Model => Model.ProductId, new { @class = "form-control", @placeholder = "Type  ProductId here" })*@
+
+                                    @Html.DropDownListFor(p => p.ProductId, new SelectList(ViewBag.ProductList, "Id", "ProductName"), new { @class = "form-control input-lg" })
+
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.ProductId, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("PurchaseQTY :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.PurchaseQTY, new { @class = "form-control", @placeholder = "Type Quantity here" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.PurchaseQTY, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("PurchasePrice :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.PurchasePrice, new { @class = "form-control", @placeholder = "Type Purchase Price here" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.PurchasePrice, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("TotalPrice :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.TotalPrice, new { @class = "form-control", @placeholder = "TotalPrice" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.TotalPrice, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("PurchaseDate:")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.PurchaseDate, new { @class = "form-control", @placeholder = "PurchaseDate" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.PurchaseDate, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("SellPrice :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.SellPrice, new { @class = "form-control", @placeholder = "Type Sell Price Here" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.SellPrice, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("PaymentTypeId :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @*Html.TextBoxFor(Model => Model.PaymentTypeId, new { @class = "form-control", @placeholder = "Payment Type" })*@
+
+                                    @Html.DropDownListFor(p => p.PaymentTypeId, new SelectList(ViewBag.PaymentList, "Id", "PaymentMethod"), new { @class = "form-control input-lg" })
+                                </div>
+                                @Html.ValidationMessageFor(p => p.PaymentTypeId, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("StaffId :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @*Html.TextBoxFor(Model => Model.StaffId, new { @class = "form-control", @placeholder = "Type StaffId" })*@
+
+                                    @Html.DropDownListFor(p => p.StaffId, new SelectList(ViewBag.StaffList, "Id", "Fullname"), new { @class = "form-control input-lg" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.StaffId, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="submit" value="submit" class="btn btn-success" style="padding-top:5px;" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        // $(document).ready(function () { alert("Haii"); });
+
+        $("#PurchaseQTY,#PurchasePrice,#TotalPrice").blur(function () {
+            var sum = $("#PurchaseQTY").val() * $("#PurchasePrice").val();
+            var date = new Date();
+            var val = date.toLocaleDateString() +" " + date.toLocaleTimeString();
+            $("#PurchaseDate").val(val)
+            $("#TotalPrice").val(sum);
+        });
+
+
+
+    </script>
+}
+

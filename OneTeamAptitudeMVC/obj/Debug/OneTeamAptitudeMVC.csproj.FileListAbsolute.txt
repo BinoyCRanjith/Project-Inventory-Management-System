@@ -1,0 +1,296 @@
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\ApplicationInsights.config
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.dll.config
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.pdb
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Antlr3.Runtime.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Agent.Intercept.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.DependencyCollector.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Web.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.WindowsServer.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.ApplicationInsights.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.Web.Infrastructure.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Newtonsoft.Json.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Helpers.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Mvc.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Optimization.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Razor.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Deployment.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Razor.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\WebGrease.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Helpers.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Mvc.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Optimization.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Razor.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Deployment.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Razor.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Antlr3.Runtime.pdb
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Newtonsoft.Json.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.ApplicationInsights.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.DependencyCollector.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.WindowsServer.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Web.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csprojResolveAssemblyReference.cache
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csproj.CoreCompileInputs.cache
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.pdb
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\BundleTransformer.Core.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\ru-ru\BundleTransformer.Core.resources.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.ValueTuple.dll
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.pdb
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.xml
+D:\BasilJose\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.ValueTuple.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\ApplicationInsights.config
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.dll.config
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.pdb
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Antlr3.Runtime.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\BundleTransformer.Core.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.DependencyCollector.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Web.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.WindowsServer.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.ApplicationInsights.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.Web.Infrastructure.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Newtonsoft.Json.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.ValueTuple.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Helpers.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Mvc.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Optimization.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Razor.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Deployment.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Razor.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\WebGrease.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.pdb
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.ValueTuple.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Helpers.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Mvc.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Optimization.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Razor.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Deployment.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Razor.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Antlr3.Runtime.pdb
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Newtonsoft.Json.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.ApplicationInsights.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.DependencyCollector.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.WindowsServer.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Web.xml
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\ru-ru\BundleTransformer.Core.resources.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csproj.CoreCompileInputs.cache
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.dll
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.pdb
+D:\MVC\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csprojResolveAssemblyReference.cache
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\ApplicationInsights.config
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.dll.config
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.pdb
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Antlr3.Runtime.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\BundleTransformer.Core.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Agent.Intercept.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.DependencyCollector.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Web.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.WindowsServer.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.ApplicationInsights.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.Web.Infrastructure.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Newtonsoft.Json.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.ValueTuple.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Helpers.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Mvc.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Optimization.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Razor.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Deployment.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Razor.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\WebGrease.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.pdb
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.ValueTuple.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Helpers.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Mvc.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Optimization.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Razor.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Deployment.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Razor.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Antlr3.Runtime.pdb
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Newtonsoft.Json.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.ApplicationInsights.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.DependencyCollector.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.WindowsServer.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Web.xml
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\ru-ru\BundleTransformer.Core.resources.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csprojResolveAssemblyReference.cache
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csproj.CoreCompileInputs.cache
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.dll
+D:\BasilJose\mvcjan7\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.pdb
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\ApplicationInsights.config
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.dll.config
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.pdb
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Antlr3.Runtime.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\BundleTransformer.Core.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.DependencyCollector.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Web.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.WindowsServer.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.ApplicationInsights.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.Web.Infrastructure.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Newtonsoft.Json.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.ValueTuple.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Helpers.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Mvc.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Optimization.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Razor.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Deployment.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Razor.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\WebGrease.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.pdb
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.ValueTuple.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Helpers.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Mvc.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Optimization.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Razor.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Deployment.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Razor.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Antlr3.Runtime.pdb
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Newtonsoft.Json.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.ApplicationInsights.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.DependencyCollector.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.WindowsServer.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Web.xml
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\ru-ru\BundleTransformer.Core.resources.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csprojResolveAssemblyReference.cache
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csproj.CoreCompileInputs.cache
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.dll
+D:\Basil Apps Team\MVC Aptitude\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.pdb
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\ApplicationInsights.config
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.dll.config
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.pdb
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Antlr3.Runtime.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\BundleTransformer.Core.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Agent.Intercept.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.DependencyCollector.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Web.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.WindowsServer.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.ApplicationInsights.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.Web.Infrastructure.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Newtonsoft.Json.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.ValueTuple.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Helpers.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Mvc.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Optimization.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Razor.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Deployment.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Razor.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\WebGrease.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.pdb
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.ValueTuple.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Helpers.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Mvc.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Optimization.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Razor.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Deployment.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Razor.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Antlr3.Runtime.pdb
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Newtonsoft.Json.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.ApplicationInsights.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.DependencyCollector.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.WindowsServer.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Web.xml
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\ru-ru\BundleTransformer.Core.resources.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csprojAssemblyReference.cache
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csproj.CoreCompileInputs.cache
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csproj.CopyComplete
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.dll
+H:\Apptitude\OneTeamAptitudeMVC (3)\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.pdb
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\ApplicationInsights.config
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.dll.config
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\OneTeamAptitudeMVC.pdb
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Antlr3.Runtime.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\BundleTransformer.Core.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Web.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Newtonsoft.Json.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.ValueTuple.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Helpers.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Mvc.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Optimization.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Razor.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Razor.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\WebGrease.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.pdb
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\AutoMapper.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.ValueTuple.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Helpers.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Mvc.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Optimization.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.Razor.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\System.Web.WebPages.Razor.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Antlr3.Runtime.pdb
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Newtonsoft.Json.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\Microsoft.AI.Web.xml
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csproj.AssemblyReference.cache
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csproj.CoreCompileInputs.cache
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.csproj.CopyComplete
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.dll
+C:\Users\Binoy Renjith\Desktop\Json Support project Demo\OneTeamAptitudeMVC\OneTeamAptitudeMVC\obj\Debug\OneTeamAptitudeMVC.pdb

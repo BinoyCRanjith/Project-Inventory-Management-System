@@ -1,0 +1,71 @@
+﻿@model OneTeamAptitudeMVC.Models.MarkData
+
+@using (Html.BeginForm("Save", "Marks", FormMethod.Post))
+{
+    @Html.HiddenFor(p => p.ID)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h1>User Registration</h1>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("UserID :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.UserID, new { @class = "form-control", @placeholder = "Type UserID" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.UserID, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("SubjectID :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+
+
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.SubjectID, new { @class = "form-control", @placeholder = "Type SubjectID here" })
+                                </div>
+                                @Html.ValidationMessageFor(p1 => p1.SubjectID, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("Mark :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-phone-square"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.Mark, new { @class = "form-control", @placeholder = "Type Mark here" })
+                                </div> @Html.ValidationMessageFor(p => p.Mark, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+
+
+
+
+                       
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="submit" value="submit" class="btn btn-success" style="padding-top:5px;" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

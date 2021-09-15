@@ -1,0 +1,90 @@
+﻿@model OneTeamAptitudeMVC.Models.ProductData
+@using (Html.BeginForm("Save", "Product", FormMethod.Post))
+{
+    @Html.HiddenFor(p => p.Id)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Product Updation</h1>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("CategoryId :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @*Html.TextBoxFor(Model => Model.CategoryId, new { @class = "form-control", @placeholder = "Type  CategoryId here" })*@
+
+                                    @Html.DropDownListFor(p => p.CategoryId, new SelectList(ViewBag.CategoryList, "Id", "CategoryName"), new { @class = "form-control input-lg" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.CategoryId, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("SubCategoryId :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @*Html.TextBoxFor(Model => Model.SubCategoryId, new { @class = "form-control", @placeholder = "Type SubCategoryId here" })*@
+
+
+                                    @Html.DropDownListFor(p => p.SubCategoryId, new SelectList(ViewBag.SubCategoryList, "Id", "SubCategoryName"), new { @class = "form-control input-lg" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.SubCategoryId, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("BrandId :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @*Html.TextBoxFor(Model => Model.BrandId, new { @class = "form-control", @placeholder = "Type BrandId here" })*@
+
+                                    @Html.DropDownListFor(p => p.BrandId, new SelectList(ViewBag.BrandList, "Id", "BrandName"), new { @class = "form-control input-lg" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.BrandId, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("ProductName :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.ProductName, new { @class = "form-control", @placeholder = "Type  Product Name here" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.ProductName, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="submit" value="submit" class="btn btn-success" style="padding-top:5px;" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

@@ -1,0 +1,42 @@
+﻿@model OneTeamAptitudeMVC.Models.BrandData
+@using (Html.BeginForm("Save", "Brand", FormMethod.Post))
+{
+    @Html.HiddenFor(p => p.Id)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Brand Updation</h1>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("BrandName :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.BrandName, new { @class = "form-control", @placeholder = "Type  Brand Name here" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.BrandName, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="submit" value="submit" class="btn btn-success" style="padding-top:5px;" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+

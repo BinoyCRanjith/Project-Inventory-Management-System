@@ -1,0 +1,177 @@
+﻿@model OneTeamAptitudeMVC.Models.ReturnData
+@using (Html.BeginForm("Save", "Return", FormMethod.Post))
+{
+    @Html.HiddenFor(p => p.Id)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Return Data Updation</h1>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("ProductId :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @*Html.TextBoxFor(Model => Model.ProductId, new { @class = "form-control", @placeholder = "Type  ProductId here" })*@
+
+                                    @Html.DropDownListFor(p => p.ProductId, new SelectList(ViewBag.ProductList, "Id", "ProductName"), new { @class = "form-control input-lg" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.ProductId, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("CustomerId :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @*Html.TextBoxFor(Model => Model.CustomerId, new { @class = "form-control", @placeholder = "Type CustomerId here" })*@
+
+                                    @Html.DropDownListFor(p => p.CustomerId, new SelectList(ViewBag.CustomerList, "Id", "Name"), new { @class = "form-control input-lg" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.CustomerId, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("Invoice no :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @*Html.TextBoxFor(Model => Model.SalesId, new { @class = "form-control", @placeholder = "Type SalesId here" })*@
+
+                                    @Html.DropDownListFor(p => p.SalesId, new SelectList(ViewBag.SalesList, "Id", "Id"), new { @class = "form-control input-lg" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.SalesId, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("ReturnQTY :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.SalesQTY, new { @class = "form-control", @placeholder = "Type SalesQTY here" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.SalesQTY, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("SalesPrice :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.SalesPrice, new { @class = "form-control", @placeholder = "SalesPrice" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.SalesPrice, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("TotalPrice :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.TotalPrice, new { @class = "form-control", @placeholder = "Type TotalPrice Here" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.TotalPrice, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("ReturnDate :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.ReturnDate, new { @class = "form-control", @placeholder = "Type TotalPrice Here" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.ReturnDate, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("PaymentTypeId :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @*Html.TextBoxFor(Model => Model.PaymentTypeId, new { @class = "form-control", @placeholder = "Payment Type" })*@
+
+                                    @Html.DropDownListFor(p => p.PaymentTypeId, new SelectList(ViewBag.PaymentList, "Id", "PaymentMethod"), new { @class = "form-control input-lg" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.PaymentTypeId, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("StaffId :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @*Html.TextBoxFor(Model => Model.StaffId, new { @class = "form-control", @placeholder = "Type StaffId" })*@
+
+                                    @Html.DropDownListFor(p => p.StaffId, new SelectList(ViewBag.StaffList, "Id", "Fullname"), new { @class = "form-control input-lg" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.StaffId, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="submit" value="submit" class="btn btn-success" style="padding-top:5px;" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        // $(document).ready(function () { alert("Haii"); });
+
+        $("#SalesQTY,#SalesPrice,#TotalPrice").blur(function () {
+            var sum = $("#SalesQTY").val() * $("#SalesPrice").val();
+            var date = new Date();
+            var val = date.toLocaleDateString() + " " + date.toLocaleTimeString();
+            $("#ReturnDate").val(val)
+            $("#TotalPrice").val(sum);
+        });
+    </script>
+}
+

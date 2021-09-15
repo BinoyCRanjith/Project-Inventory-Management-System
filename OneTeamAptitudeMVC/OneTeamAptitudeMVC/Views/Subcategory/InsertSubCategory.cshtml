@@ -1,0 +1,56 @@
+﻿@model OneTeamAptitudeMVC.Models.SubcategoryData
+@using (Html.BeginForm("Save", "SubCategory", FormMethod.Post))
+{
+    @Html.HiddenFor(p => p.Id)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h1>SubCategory Updation</h1>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("SubCategoryName :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.SubCategoryName, new { @class = "form-control", @placeholder = "Type  SubCategory Name here" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.SubCategoryName, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("CategoryId :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @*Html.TextBoxFor(Model => Model.CategoryId, new { @class = "form-control", @placeholder = "Type  Category Id here" })*@
+
+                                    @Html.DropDownListFor(p => p.CategoryId, new SelectList(ViewBag.CategoryList, "Id", "CategoryName"), new { @class = "form-control input-lg" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.CategoryId, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                            </div>
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="submit" value="submit" class="btn btn-success" style="padding-top:5px;" />
+
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,489 @@
+﻿@model OneTeamAptitudeMVC.Models.User
+@{
+    /**/
+
+    ViewBag.Title = "CreateUser";
+}
+<div class="sidebar" data-color="green">
+    <div class="logo">
+        <h1>Aptitude Portal</h1>
+    </div>
+    <div class="sidebar-wrapper">
+        <ul class="nav">
+            <li>
+                <a href="~/Admin/ExamResult">
+                    <i class="fa fa-university"></i>
+                    <p>Exam Result</p>
+                </a>
+            </li>
+            <li>
+                <a href="~/Admin/Question">
+                    <i class="now-ui-icons education_atom"></i>
+                    <p>Apptitude Questions</p>
+                </a>
+            </li>
+
+
+            <li class="active">
+                <a href="~/Admin/Index">
+                    <i class="now-ui-icons users_single-02"></i>
+                    <p>User </p>
+                </a>
+            </li>
+            @*<li>
+                    <a href="=">
+                        <i class="now-ui-icons ui-1_bell-53"></i>
+                        <p>Notifications</p>
+                    </a>
+                </li>*@
+            <li>
+                <a href="~/Admin/LevelAssign">
+                    <i class="fa fa-gear fa-spin"></i>
+                    <p>Level Assign</p>
+                </a>
+            </li>
+            @*<li>
+                    <a href="./typography.html">
+                        <i class="now-ui-icons text_caps-small"></i>
+                        <p>Typography</p>
+                    </a>
+                </li>*@
+            <li>
+                <a href="~/Account/ChangePassword">
+                    <i class="fa fa-user-secret"></i>
+                    <p>Change Password</p>
+                </a>
+            </li>
+            <li>
+                <a href="~/Account/LogOut">
+                    <i class="fa fa-sign-out-alt"></i>
+                    <p>Logout</p>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div class="main-panel" style="background-color:white;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent  bg-primary  navbar-absolute">
+
+        <div class="container-fluid">
+            <div class="navbar-wrapper">
+                <div class="navbar-toggle">
+                    <button type="button" class="navbar-toggler">
+                        <span class="navbar-toggler-bar bar1"></span>
+                        <span class="navbar-toggler-bar bar2"></span>
+                        <span class="navbar-toggler-bar bar3"></span>
+                    </button>
+                </div>
+                <a class="navbar-brand" href="#pablo">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+    <div class="content" style="margin-top:5px;">
+
+        @using (Html.BeginForm("UserRegistration", "Admin", FormMethod.Post))
+        {
+            <div class="row">
+                <div class="col-md-8">
+
+                    <img src="../Images/OnetEAMSOLUTIONS.png" class="img-responsive" alt="One Team Aptitude Portal" />
+
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card" style="margin-left:20px;margin-top:20px;padding: 10px;box-shadow: 5px 10px 8px #888888;border-radius:10px">
+                        <div class="card-header">User Info.</div>
+                        <div class="card-body">
+                            <div class="form-group ">
+                                @Html.Label("name :")
+                                <div class="input-group mb-3">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @placeholder = "type name here" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.Name, "", new { @class = "text-danger", @required = "", })
+                            </div>
+
+
+
+                            <div class="form-group">
+                                @Html.Label("Email :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.Email, new { @class = "form-control", @placeholder = "Type Email here" })
+                                </div>
+                                @Html.ValidationMessageFor(p1 => p1.Email, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.Label("Phone :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-phone-square"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.Phone, new { @class = "form-control", @placeholder = "Type Phone No here" })
+                                </div> @Html.ValidationMessageFor(p => p.Phone, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.Label("User Roll :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-vcard"></i>
+                                    </div>
+                                    @Html.DropDownListFor(Model => Model.RollId, new SelectList(ViewBag.UserRoll, "RollId", "RollName"), "select", new { @class = "form-control input-lg" })
+                                </div>@Html.ValidationMessageFor(p => p.RollId, "", new { @class = "text-danger" })
+                            </div>
+
+
+                            <div class="form-group">
+                                @Html.Label("Department :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-graduation-cap"></i>
+                                    </div>
+                                    @Html.DropDownListFor(Model => Model.DepartmentId, new SelectList(ViewBag.UserDepartment, "DepartmentId", "DepartmentName"), "select", new { @class = "form-control input-lg", @onchange = "VisibleEditButton(this.value)" })
+                                </div>
+                                @Html.ValidationMessageFor(p => p.DepartmentId, "", new { @class = "text-danger" })
+                                <div id="SpanEditDeleteAdd" style="margin-top:5px;">
+                                    <input id="BtnAddNew" type="button" value="Add" class="btn btn-success" onclick="VisibleeditSpan(0)" />
+
+                                    <input id="BtnEdit" type="button" value="Edit" class="btn btn-primary" onclick="VisibleeditSpan(1)" style="visibility: hidden" />
+
+                                    <input id="BtnDelete" type="button" value="Delete" class="btn btn-danger" onclick="DeleteDepartment()" style="visibility: hidden" />
+                                </div>
+
+
+
+                                <div style="visibility: hidden" id="SpanEditAddDeptSave">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-chain"></i>
+                                        </div>
+                                        <input id="txtDepartment" placeholder="Type Here!" class="form-control" type="text" />
+                                    </div>
+                                    <input id="BtnDeptSave" type="button" value="Save" class="btn btn-success" onclick="SaveDept()" />
+
+                                    <input id="BtnDeptCancel" type="button" value="cancel" class="btn btn-danger" onclick="hiddenAddNewSpan()" />
+
+                                </div>
+
+                            </div>
+                            @Html.HiddenFor(Model => Model.Action, new { @Value = 0 })
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="card" style="margin-left:20px;margin-top:20px;padding: 10px;box-shadow: 5px 10px 8px #888888;border-radius:10px">
+                            <div class="card-header">Personal</div>
+                            <div class="card-body">
+                                <table class="table-responsive">
+                                    <tr style="width:100%">
+                                        <td style="width:400px;">
+                                            <div class="form-group">
+                                                @Html.Label("Gender :")
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-vcard"></i>
+                                                    </div>
+                                                    <select class="form-control input-lg">
+                                                        <option>Select</option>
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="margin-left:30px;width:400px">
+                                            <div class="form-group">
+                                                @Html.Label("Blood Group :")
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-vcard"></i>
+                                                    </div>
+                                                    <select class="form-control input-lg">
+                                                        <option>Select</option>
+                                                        <option>O-</option>
+                                                        <option>O+</option>
+                                                        <option>A+</option>
+                                                        <option>A-</option>
+                                                        <option>AB+</option>
+                                                        <option>AB-</option>
+                                                        <option>B-</option>
+                                                        <option>B+</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr style="width:100%">
+                                        <td style="width:400px;">
+                                            <div class="form-group">
+                                                @Html.Label("Date Of Birth :")
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-vcard"></i>
+                                                    </div>
+                                                    <input type="date" class="form-control input-lg" />
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td style="margin-left:30px;width:400px">
+                                            <div class="form-group">
+                                                @Html.Label("Joining Date :")
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-vcard"></i>
+                                                    </div>
+                                                    <input type="date" class="form-control input-lg" />
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="card" style="margin-left:20px;margin-top:20px;padding: 10px;box-shadow: 5px 10px 8px #888888;border-radius:10px">
+                            <div class="card-header">Address</div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    @Html.Label("Address 1 :")
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-vcard"></i>
+                                        </div>
+                                        <textarea style="width:320px;border:none " class="form-control input-lg"> </textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("Pincode 1 :")
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-vcard"></i>
+                                        </div>
+                                        <input type="text" class="form-control input-lg" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("Address 2 :")
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-vcard"></i>
+                                        </div>
+                                        <textarea style="width:320px;border:none " class="form-control input-lg"> </textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("Pincode 2 :")
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-vcard"></i>
+                                        </div>
+                                        <input type="text" class="form-control input-lg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card" style="margin-left:20px;margin-top:20px;padding: 10px;">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <input id="Submit1" type="submit" value="Save" class="btn btn-success" style="padding-top:5px;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        }
+
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        var EditOnlyText = "";
+      var  editIndicator = "false"
+        function DeleteDepartment() {
+            Myvar = document.getElementById('DepartmentId').value;
+            var skillsSelect = document.getElementById("DepartmentId");
+            var selectedText = skillsSelect.options[skillsSelect.selectedIndex].text;
+            var retVal = confirm("Do you want to Delete " + selectedText+" ?");
+            if (retVal == true) {
+
+                $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("DeleteDepartment", "Department")',
+                    data: { id: Myvar },
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    cache: false,
+                    success: function (Result) {
+                        if (Result.success) {
+                            var option = "";
+                            $('#DepartmentId').empty();
+                            $.each(Result.data, (index, item) => {
+                                option += '<option value="' + item.DepartmentId + '">' + item.DepartmentName + '</option>'
+                            })
+
+
+                            $('#DepartmentId').append(option);
+                        }
+                        console.log(Result.data);
+                    }
+                });
+                alert("Department Deleted");
+                hiddenAddNewSpan();
+
+            }
+
+        }
+        function VisibleEditButton() {
+            var skillsSelect = document.getElementById("DepartmentId");
+            var selectedText = skillsSelect.options[skillsSelect.selectedIndex].text;
+            if (selectedText != "Select") {
+                document.getElementById('BtnEdit').style.visibility = "visible";
+                document.getElementById('BtnDelete').style.visibility = "visible";
+            }
+            else {
+                document.getElementById('BtnEdit').style.visibility = "hidden";
+                document.getElementById('BtnDelete').style.visibility = "hidden";
+
+            }
+
+        }
+        function VisibleeditSpan(a) {
+            document.getElementById('SpanEditDeleteAdd').style.visibility = "hidden";
+            document.getElementById('BtnEdit').style.visibility = "hidden";
+            document.getElementById('BtnDelete').style.visibility = "hidden";
+            document.getElementById('SpanEditAddDeptSave').style.visibility = "visible";
+            if (a == 1) {
+                var skillsSelect = document.getElementById("DepartmentId");
+                var selectedText = skillsSelect.options[skillsSelect.selectedIndex].text;
+                EditOnlyText = selectedText;
+                document.getElementById("txtDepartment").value = selectedText;
+                editIndicator = "true";
+            }
+
+
+
+        }
+        function hiddenAddNewSpan() {
+            document.getElementById('SpanEditAddDeptSave').style.visibility = "hidden";
+            document.getElementById('SpanEditDeleteAdd').style.visibility = "visible";
+
+            editIndicator = "false";
+
+        }
+        //function SaveDept() {
+        //    if (editIndicator == "false") {
+        //        Myvar = document.getElementById('ContentPlaceHolder1_dropDownDepatent').value;
+        //        Or: __doPostBack(Myvar, "SaveDept");
+        //    }
+        //    else if (editIndicator == "true") {
+        //        Myvar = document.getElementById('ContentPlaceHolder1_dropDownDepatent').value;
+        //        Or: __doPostBack(Myvar, "UpdateDept");
+        //        editIndicator = "false";
+
+        //    }
+
+        //    document.getElementById("ContentPlaceHolder1_txtDepartment").value = "";
+        //    document.getElementById('SpanEditAddDeptSave').style.visibility = "hidden";
+
+        //}
+
+
+        function EditUser(d) {
+            Or: __doPostBack(d, "editUser");
+
+        }
+        function SaveDept() {
+            if (editIndicator == "false") {
+                Myvar = document.getElementById('txtDepartment').value;
+                $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("SaveDepartment", "Department")',
+                    data: { id: Myvar },
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    cache: false,
+                    success: function (Result) {
+                        if (Result.success) {
+                            var option = "";
+                            $('#DepartmentId').empty();
+                            $.each(Result.data, (index, item) => {
+                                option += '<option value="' + item.DepartmentId + '">' + item.DepartmentName + '</option>'
+                            })
+
+
+                            $('#DepartmentId').append(option);
+                        }
+                    }
+                });
+                //Or: __doPostBack(Myvar, "SaveCat");
+                alert("Department " + Myvar+" is Added");
+            }
+            else if (editIndicator == "true") {
+                var DeptId = document.getElementById('DepartmentId').value;
+                var UpdateText = document.getElementById('txtDepartment').value;
+                 $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("UpdateDepartment", "Department")',
+                    data: { id: DeptId, DeptName: UpdateText},
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    cache: false,
+                    success: function (Result) {
+                        if (Result.success) {
+                            var option = "";
+                            $('#DepartmentId').empty();
+                            $.each(Result.data, (index, item) => {
+                                option += '<option value="' + item.DepartmentId + '">' + item.DepartmentName + '</option>'
+                            })
+
+
+                            $('#DepartmentId').append(option);
+                        }
+                    }
+                });
+                 alert("Department " + EditOnlyText + " is changed to " + UpdateText);
+                editIndicator == "false"
+            }
+            document.getElementById("txtDepartment").value = "";
+            document.getElementById('SpanEditAddDeptSave').style.visibility = "hidden";
+        }
+
+    </script>
+}

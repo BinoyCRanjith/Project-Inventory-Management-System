@@ -1,0 +1,285 @@
+﻿@model List<OneTeamAptitudeMVC.Models.Questions>
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    .inputGroup {
+        background-color: #fff;
+        display: block;
+        margin: 10px 0;
+        position: relative;
+        width: 300px;
+    }
+
+        .inputGroup label {
+            padding: 12px 30px;
+            width: 100%;
+            display: block;
+            text-align: left;
+            color: #3C454C;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            transition: color 200ms ease-in;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+            .inputGroup label:before {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                content: '';
+                background-color: #54E0C7;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                -webkit-transform: translate(-50%, -50%) scale3d(1, 1, 1);
+                transform: translate(-50%, -50%) scale3d(1, 1, 1);
+                transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+                opacity: 0;
+                z-index: -1;
+            }
+
+            .inputGroup label:after {
+                width: 32px;
+                height: 32px;
+                content: '';
+                border: 2px solid #D1D7DC;
+                background-color: #fff;
+                background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+                background-repeat: no-repeat;
+                background-position: 2px 3px;
+                border-radius: 50%;
+                z-index: 2;
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                cursor: pointer;
+                transition: all 200ms ease-in;
+            }
+
+        .inputGroup input:checked ~ label {
+            color: #fff;
+        }
+
+            .inputGroup input:checked ~ label:before {
+                -webkit-transform: translate(-50%, -50%) scale3d(56, 56, 1);
+                transform: translate(-50%, -50%) scale3d(56, 56, 1);
+                opacity: 1;
+            }
+
+            .inputGroup input:checked ~ label:after {
+                background-color: #5562eb;
+                border-color: #54E0C7;
+            }
+
+        .inputGroup input {
+            width: 32px;
+            height: 32px;
+            order: 1;
+            z-index: 2;
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            cursor: pointer;
+            visibility: hidden;
+        }
+
+    div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: cadetblue;
+        border: 2px solid #4CAF50;
+    }
+</style>
+@using (Html.BeginForm("AnswerSubmit", "Exam", FormMethod.Post))
+{
+
+    <div class="content">
+        <div class="row sticky" style="opacity:1">
+            <div class="col-md-8 col-md-offset-2">
+
+
+
+                <img src="../Images/OnetEAMSOLUTIONS.png" class="img-responsive" alt="One Team Aptitude Portal" />
+
+
+
+                <div>
+                    <h1 id="MyTimer" style="color:green;position:center"></h1>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container position-static">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="card">
+
+                    <div class="card-body">
+
+
+
+
+                        @foreach (var Qns in Model)
+
+                        {
+                            <table class="table-responsive">
+                                <tr>
+                                    <td colspan="4">
+                                        <label style="margin-top:10px;font-size:20px;">
+                                             @Qns.Question
+                                        </label>
+                                         
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="inputGroup">
+                                            <input id="@Qns.Option1@Qns.Id" type="radio" name="@Qns.Id" value="@Qns.Option1">
+
+                                            <label for="@Qns.Option1@Qns.Id">
+                                                @Qns.Option1
+                                            </label>
+                                        </div>
+
+
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        <div class="inputGroup">
+
+                                            <input id="@Qns.Option2@Qns.Id" type="radio" name="@Qns.Id" value="@Qns.Option2"><label for="@Qns.Option2@Qns.Id">
+                                                @Qns.Option2
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="inputGroup">
+
+                                            <input id="@Qns.Option3@Qns.Id" type="radio" name="@Qns.Id" value="@Qns.Option3"><label for="@Qns.Option3@Qns.Id">
+                                                @Qns.Option3
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        <div class="inputGroup">
+
+                                            <input id="@Qns.Option4@Qns.Id" type="radio" name="@Qns.Id" value="@Qns.Option4"><label for="@Qns.Option4@Qns.Id">
+                                                @Qns.Option4
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        }
+
+
+
+                        <input type="submit" value="Submit Answer" class="btn btn-success" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" value="@ViewBag.LeveId" id="LevelId" />
+    <div style="position: fixed;border: 1px solid blue;background-color:cadetblue;width: 300px;height: 100px;bottom: 0; left: 0;right: 0;">
+        <h1 id="MyTimer1" style="position:center"></h1>
+    </div>
+    
+
+
+
+
+
+@section scripts
+{
+    <script>
+
+        //var EX = localStorage.getItem('exam');
+        //if (EX == 1) {
+        //    alert("You Already Attend The Exam Come back tommorrow");
+        //    window.location = "../USER/User_Exam_View.aspx";
+
+        //}
+        var Min = localStorage.getItem('Minutes');
+        var seconds = localStorage.getItem('Seconds');
+        var x = setInterval(function () {
+
+            seconds = seconds - 1;
+            document.title = Min + ":" + seconds;
+            document.getElementById("MyTimer").innerHTML = Min + "Mins " + seconds + "s ";
+            document.getElementById("MyTimer1").innerHTML = Min + "Mins " + seconds + "s ";
+            document.title = Min + ":" + seconds;
+            localStorage.setItem('Minutes', Min);
+            localStorage.setItem('Seconds', seconds);
+            if (seconds < 2) {
+                if (Min < 1 && seconds < 2) {
+
+                    //MyFunction("fdfd","fgf");
+                    alert("Time Is Over,Your Answer Is Being Recorded!");
+                    $("form").submit();
+                    //Or: __doPostBack('<%= Button1.UniqueID %>', '')
+
+                    ////document.getElementById("MyTimer").innerHTML ="Your Time Is Over Click the Bottom Button To Submit Answer"
+                    //////document.getElementById("MyTimer").style.visibility = "hidden";
+                    //document.getElementById("QnSelectorDiv").style.visibility = "hidden";
+                    //clearInterval(x);
+
+                }
+                Min -= 1;
+                seconds = 60;
+
+
+
+
+            }
+            if (Min < 10 && Min > 5) {
+                document.getElementById("MyTimer").style.color = "grey";
+            }
+            else if (Min < 5) {
+                document.getElementById("MyTimer").style.color = "red";
+            }
+
+        }, 1000);
+
+        //function MyFunction(Param1, Param2) {
+        window.onload = function () {
+            var EX = localStorage.getItem('exam');
+            if (EX == 1) {
+                alert("You Already Attend The Exam Come back tommorrow");
+                window.location = "~/User/Index";
+            }
+        };
+
+
+                                                                                                                                                                                                                            //    PageMethods.MyMethod(Param1, Param2, onSucceed, onError);
+                                                                                                                                                                                                                            //}
+
+                                                                                                                                                                                                                            ////CallBack method when the page call succes                                                                                                                                                                                            //function onError() {
+                                                                                                                                                                                                                            //    //Do here failure event
+                                                                                                                                                                                                                            //}
+
+    </script>
+}
+}

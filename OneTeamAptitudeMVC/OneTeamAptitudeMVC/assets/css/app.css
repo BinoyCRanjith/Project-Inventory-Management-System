@@ -1,0 +1,87 @@
+﻿.menu-ico {
+    content: " ";
+    width: 15px;
+    height: 15px;
+    background-size: 17px;
+    opacity: .6;
+}
+
+.student-ico {
+    background: url(../img/menu/student.png) center no-repeat;
+}
+
+.teacher-ico {
+    background: url(../img/menu/teacher.png) center no-repeat;
+}
+
+.staff-ico {
+    background: url(../img/menu/staff.png) center no-repeat;
+}
+
+.desig-ico {
+    background: url(../img/menu/designation.png) center no-repeat;
+}
+
+.quali-ico {
+    background: url(../img/menu/qualifications.png) center no-repeat;
+}
+
+.class-ico {
+    background: url(../img/menu/class.png) center no-repeat;
+}
+
+.rooms-ico {
+    background: url(../img/menu/rooms.png) center no-repeat;
+}
+
+.subject-ico {
+    background: url(../img/menu/subjects.png) center no-repeat;
+}
+
+.attendance-ico {
+    background: url(../img/menu/attendance.png) center no-repeat;
+}
+
+.shedule-ico {
+    background: url(../img/menu/schedule.png) center no-repeat;
+}
+
+.resultcard-ico {
+    background: url(../img/menu/result-card.png) center no-repeat;
+}
+
+.announcement-ico {
+    background: url(../img/menu/announcement.png) center no-repeat;
+}
+
+.gallery-ico {
+    background: url(../img/menu/gallery.png) center no-repeat;
+}
+
+.homework-ico {
+    background: url(../img/menu/homework.png) center no-repeat;
+}
+
+.administration-ico {
+    background: url(../img/menu/administrator.png) center no-repeat;
+}
+.assign-ico{
+     background: url(../img/menu/assign.png) center no-repeat;
+}
+.no-padding {
+    padding: 0;
+}
+
+.min-width-230 {
+    min-width: 230px;
+    padding-left: 0 !important;
+}
+
+    .min-width-230 .input-sm {
+        margin-left: 0px !important;
+    }
+
+
+img.lazy {
+    width: 100% !important;
+}

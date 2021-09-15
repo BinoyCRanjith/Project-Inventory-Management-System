@@ -1,0 +1,213 @@
+﻿@model List<OneTeamAptitudeMVC.Models.LevelAssign>
+@{
+    ViewBag.Title = "LevelAssign";
+}
+<div class="sidebar" data-color="green">
+    <div class="logo">
+        <h1>Aptitude Portal</h1>
+    </div>
+    <div class="sidebar-wrapper">
+        <ul class="nav">
+            <li>
+                <a href="~/Admin/ExamResult">
+                    <i class="fa fa-university"></i>
+                    <p>Exam Result</p>
+                </a>
+            </li>
+            <li>
+                <a href="~/Admin/Question">
+                    <i class="now-ui-icons education_atom"></i>
+                    <p>Apptitude Questions</p>
+                </a>
+            </li>
+
+
+            <li>
+                <a href="~/Admin/Index">
+                    <i class="now-ui-icons users_single-02"></i>
+                    <p>User </p>
+                </a>
+            </li>
+            @*<li>
+            <a href="=">
+                <i class="now-ui-icons ui-1_bell-53"></i>
+                <p>Notifications</p>
+            </a>
+        </li>*@
+            <li class="active">
+                <a href="~/Admin/LevelAssign">
+                    <i class="fa fa-gear fa-spin"></i>
+                    <p>Level Assign</p>
+                </a>
+            </li>
+            @*<li>
+            <a href="./typography.html">
+                <i class="now-ui-icons text_caps-small"></i>
+                <p>Typography</p>
+            </a>
+        </li>*@
+            <li>
+                <a href="~/Account/ChangePassword">
+                    <i class="fa fa-user-secret"></i>
+                    <p>Change Password</p>
+                </a>
+            </li>
+            <li>
+                <a href="~/Account/LogOut">
+                    <i class="fa fa-sign-out-alt"></i>
+                    <p>Logout</p>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div class="main-panel" style="background-color:white;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent  bg-primary  navbar-absolute">
+
+        <div class="container-fluid">
+            <div class="navbar-wrapper">
+                <div class="navbar-toggle">
+                    <button type="button" class="navbar-toggler">
+                        <span class="navbar-toggler-bar bar1"></span>
+                        <span class="navbar-toggler-bar bar2"></span>
+                        <span class="navbar-toggler-bar bar3"></span>
+                    </button>
+                </div>
+                <a class="navbar-brand" href="#pablo">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+    <div class="col-md-8">
+
+        <img src="../Images/OnetEAMSOLUTIONS.png" class="img-responsive" alt="One Team Aptitude Portal" />
+
+    </div>
+    <div class="content" style="margin-top:5px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+
+                    <div class="card-body">
+                        <p>
+                            @Html.ActionLink("Assign New Level", "NewLevelAssign", "Admin", null, new { @class = "btn btn-primary" })
+                        </p>
+                        <table id="editabledatatable" class="table table-striped table-hover table-bordered dt-responsive display">
+                            <thead>
+                                <tr>
+
+                                    <th>Catogory</th>
+                                    <th>Level</th>
+                                    <th>Passmark</th>
+                                    <th>Total Question</th>
+                                    <th>Time For Exam</th>
+                                    <th>Instruction</th>
+                                    <th>Edit Delete</th>
+
+
+                                </tr>
+                            </thead>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @item.Category.Name
+                                    </td>
+                                    <td>
+                                        @item.Level.Name
+                                    </td>
+                                    <td>
+                                        @item.Passmark
+                                    </td>
+                                    <td>
+                                        @item.Totalmark
+                                    </td>
+
+
+                                    <td>
+                                        @item.TimeForExam
+                                    </td>
+
+
+                                    <td>
+                                        @item.Instruction
+                                    </td>
+
+                                    <td>
+                                        <div class="btn-group">
+                                            <a class="btn btn-azure dropdown-toggle" data-toggle="dropdown">
+                                                Actions&nbsp;&nbsp; <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-azure">
+
+                                                <li>
+                                                    @Html.ActionLink("Edit", "EditLevel", "Admin", new { @id = item.LevelQnId }, new { @name = "edit" })
+
+                                                </li>
+                                                <li>
+                                                    @Html.ActionLink("Delete", "DeleteLevel", "Admin", new { @id = item.LevelQnId }, new { onclick = "return confirm('Are you sure?');" })
+
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                            }
+
+
+
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+@section scripts
+{
+    @Styles.Render("~/css/datatable")
+    @Scripts.Render("~/bundles/datatable")
+
+    @Styles.Render("~/css/datatable")
+    @Scripts.Render("~/bundles/datatable")
+
+    <script type="text/javascript">
+        var colsList = [
+            null
+            , null
+            , { className: 'col-sm-2 col-md-1 col-lg-1', orderable: false, searchable: false }
+            , { className: 'col-sm-2 col-md-1 col-lg-1', orderable: false, searchable: false }
+            , { className: 'col-sm-2 col-md-1 col-lg-1', orderable: false, searchable: false }
+            , { className: 'col-sm-2 col-md-1 col-lg-1', orderable: false, searchable: false }
+            , { className: 'col-sm-2 col-md-1 col-lg-1', orderable: false, searchable: false }
+        ]
+
+        var exportcolnumber = [0, 1, 2, 3, 4, 5, 6];
+
+        InitiateSimpleDataTable.init('#editabledatatable', colsList, exportcolnumber);
+
+        $('#editabledatatable').find('img').error(function () {
+            $(this).attr('src', '/assets/img/image-not-found.png');
+        }
+
+        );
+
+    </script>
+
+    @if (ViewBag.Message != null)
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+        </script>
+    }
+}

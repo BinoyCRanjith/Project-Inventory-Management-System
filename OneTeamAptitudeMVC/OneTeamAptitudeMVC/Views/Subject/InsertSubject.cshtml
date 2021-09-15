@@ -1,0 +1,40 @@
+﻿@model OneTeamAptitudeMVC.Models.SubjectData
+
+@using (Html.BeginForm("Save", "Subject", FormMethod.Post))
+{
+    @Html.HiddenFor(p => p.ID)
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h1>User Registration</h1>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("Subjectname :")
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    @Html.TextBoxFor(Model => Model.Subjectname, new { @class = "form-control", @placeholder = "Type Name here" })
+
+                                </div>
+                                @Html.ValidationMessageFor(p => p.Subjectname, "", new { @class = "text-danger", @required = "", })
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="submit" value="submit" class="btn btn-success" style="padding-top:5px;" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

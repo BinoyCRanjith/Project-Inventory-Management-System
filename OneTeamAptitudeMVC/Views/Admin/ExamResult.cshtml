@@ -1,0 +1,451 @@
+﻿@model List<OneTeamAptitudeMVC.Models.ExamResult>
+@{
+    ViewBag.Title = "ExamResult";
+}
+<div class="sidebar" data-color="green">
+    <div class="logo">
+        <h1>Aptitude Portal</h1>
+    </div>
+    <div class="sidebar-wrapper">
+        <ul class="nav">
+            <li class="active">
+                <a href="~/Admin/ExamResult">
+                    <i class="fa fa-university"></i>
+                    <p>Exam Result</p>
+                </a>
+            </li>
+            <li>
+                <a href="~/Admin/Question">
+                    <i class="now-ui-icons education_atom"></i>
+                    <p>Apptitude Questions</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="~/Admin/Index">
+                    <i class="now-ui-icons users_single-02"></i>
+                    <p>User </p>
+                </a>
+            </li>
+            @*
+        <li>
+            <a href="=">
+                <i class="now-ui-icons ui-1_bell-53"></i>
+                <p>Notifications</p>
+            </a>
+        </li>*@
+            <li>
+                <a href="~/Admin/LevelAssign">
+                    <i class="fa fa-gear fa-spin"></i>
+                    <p>Level Assign</p>
+                </a>
+            </li>
+            @*
+        <li>
+            <a href="./typography.html">
+                <i class="now-ui-icons text_caps-small"></i>
+                <p>Typography</p>
+            </a>
+        </li>*@
+            <li>
+                <a href="~/Account/ChangePassword">
+                    <i class="fa fa-user-secret"></i>
+                    <p>Change Password</p>
+                </a>
+            </li>
+            <li>
+                <a href="~/Account/LogOut">
+                    <i class="fa fa-sign-out-alt"></i>
+                    <p>Logout</p>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div class="main-panel" style="background-color:white;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent  bg-primary  navbar-absolute">
+
+        <div class="container-fluid">
+            <div class="navbar-wrapper">
+                <div class="navbar-toggle">
+                    <button type="button" class="navbar-toggler">
+                        <span class="navbar-toggler-bar bar1"></span>
+                        <span class="navbar-toggler-bar bar2"></span>
+                        <span class="navbar-toggler-bar bar3"></span>
+                    </button>
+                </div>
+                <a class="navbar-brand" href="#pablo">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+    <div class="content" style="margin-top:5px;">
+
+        <div class="row">
+            <div class="col-md-8">
+
+                <img src="../Images/OnetEAMSOLUTIONS.png" class="img-responsive" alt="One Team Aptitude Portal" />
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card  card-tasks" style="background-color:darkcyan;border-radius:10px;">
+                    <div class="card-header ">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4 class="card-title">
+                                    <i class="fa fa-trophy">Exam Result</i>
+                                </h4>
+                            </div>
+
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-2">
+                                @Html.ActionLink("View Details", "ViewExamHistory", "Admin", new { @class = "btn btn-primary" })
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body ">
+                        <div id="chartContainer" style="height: 300px; width: 100%;border-radius:10px;"></div>
+
+                    </div>
+                    <div class="card-footer">
+                        <i class="fa fa-refresh fa-spin"></i>
+                        <p id="Upadatedinf01"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card  card-tasks" style="background-color:darkcyan;border-radius:10px;">
+                    <div class="card-header ">
+                        <h5 class="card-category"></h5>
+                        <h4 class="card-title">
+                            <i class="fa fa-pie-chart">
+                                Attendance
+                            </i>
+
+                        </h4>
+                    </div>
+                    <div class="card-body ">
+                        <div id="chartContainer1" style="height: 300px; width: 100%;border-radius:10px;"></div>
+
+                    </div>
+                    <div class="card-footer">
+                        <i class="fa fa-refresh fa-spin"></i>
+                        <p id="Upadatedinf02"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card  card-tasks" style="background-color:darkcyan;border-radius:10px;">
+                    <div class="card-header ">
+                        <h5 class="card-category"></h5>
+                        <h4 class="card-title">
+                            <i class="fa fa-shield"> Average</i>
+
+                        </h4>
+                    </div>
+                    <div class="card-body ">
+                        <div id="chartContainer2" style="height: 370px; width: 100%;border-radius:10px;"></div>
+
+                    </div>
+                    <div class="card-footer">
+                        <i class="fa fa-refresh fa-spin"></i>
+                        <p id="Upadatedinf02"></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="createScriptDiv" style="margin-left:20px;">
+                    <div class="row">
+                        <input type="button" id="Btn_Script" class="btn btn-success" onclick="makeScript()" value="Create Script" />
+                        <button class="btn" id="CopyClipBoardBTN"><i class="fas fa-copy"></i> Copy</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <textarea id="ScriptText" class="form-control" style="height:500px;"></textarea>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+@section scripts
+
+    {
+    <script src="~/assets/js/canvasjs.min.js"></script>
+    <script>
+        var min = 0;
+        var sec = 0;
+        var x = setInterval(function () {
+            sec += 1;
+            if (sec == 60) {
+                min += 1;
+                sec = 0;
+                document.getElementById("Upadatedinf01").innerHTML = "Updated " + min + "Mins ago";
+                document.getElementById("Upadatedinf02").innerHTML = "Updated " + min + "Mins ago";
+            }
+
+
+        }, 1000);
+    </script>
+ <script>
+       
+        $('#CopyClipBoardBTN').click(function () {
+            debugger;
+            var clipboardText = "";
+
+            clipboardText = $('#ScriptText').val();
+
+            var textArea = document.createElement("textarea");
+            if (clipboardText != "") {
+                textArea.value = clipboardText;
+                document.body.appendChild(textArea);
+
+                textArea.select();
+
+                try {
+                    var successful = document.execCommand('copy');
+                    var msg = successful ? 'successful' : 'unsuccessful';
+                    console.log('Copying text command was ' + msg);
+                } catch (err) {
+                    console.log('Oops, unable to copy');
+                }
+
+                document.body.removeChild(textArea);
+                // copyTextToClipboard(clipboardText);
+                alert("Copied to Clipboard");
+            }
+            else
+            {
+                alert("Nothing to Copy");
+
+            }
+        });
+
+        
+    </script>
+    <script>
+        window.onload = function () {
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1; //January is 0!
+            var yyyy = today.getFullYear();
+
+            if (dd < 10) {
+                dd = '0' + dd
+            }
+
+            if (mm < 10) {
+                mm = '0' + mm
+            }
+
+            today = mm + '/' + dd + '/' + yyyy;
+
+            var dataPoints = [];
+            /**/
+@foreach (var item in ViewBag.Datapoints)
+        {
+<text>
+        /**/
+        /**/
+        /**/
+        dataPoints.push({ label: "@item.Label", y:@item.Y });
+        /**/
+        /**/
+        /**/
+</text>
+    }
+        /**/
+
+
+
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "" + today
+            },
+            axisY: {
+                title: "Mark",
+                suffix: "",
+                includeZero: false
+            },
+            axisX: {
+                title: "Student"
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "",
+                dataPoints: dataPoints,
+            }]
+        });
+        chart.render();
+
+
+        var tot = 0;
+        var ExamStats = [];
+        /**/
+@foreach (var item in ViewBag.ExamStats)
+        {
+
+<text>
+        /**/
+        /**/
+        /**/
+        var Result = (((@item.X) / (@item.Y)) * 100).toFixed(1);
+        /**/
+        /**/
+        tot += parseFloat(Result);
+        /**/
+        /**/
+        ExamStats.push({ label: "@item.Label", legendText: "@item.Label", y: Result });
+        /**/
+        /**/
+        /**/
+</text>
+    }
+        /**/
+        ExamStats.push({ label: "Un Attented", legendText: "Un Attented", y: (100 - tot) });
+
+        $(function () {
+            var chart = new CanvasJS.Chart("chartContainer1", {
+                title: {
+                    text: "Exam Attended Statistics"
+                },
+                animationEnabled: true,
+                legend: {
+                    fontSize: 20,
+                    fontFamily: "Helvetica"
+                },
+                theme: "light2",
+                data: [
+                    {
+                        type: "doughnut",
+                        indexLabelFontFamily: "Garamond",
+                        indexLabelFontSize: 20,
+                        indexLabel: "{label} {y}%",
+                        startAngle: -20,
+                        showInLegend: true,
+                        toolTipContent: "{legendText} {y}%",
+                        dataPoints: ExamStats,
+                        //    [
+                        //{ y: 72.48, legendText: "Google", label: "Google" },
+                        //{ y: 10.39, legendText: "Bing", label: "Bing" },
+                        //{ y: 7.78, legendText: "Yahoo!", label: "Yahoo!" },
+                        //{ y: 7.14, legendText: "Baidu", label: "Baidu" },
+                        //{ y: 0.22, legendText: "Ask", label: "Ask" },
+                        //{ y: 0.15, legendText: "AOL", label: "AOL" },
+                        //{ y: 1.84, legendText: "Others", label: "Others" }
+                        //    ]
+
+                        //You can add dynamic data from the controller as shown below. Check the controller and uncomment the line which generates dataPoints.
+                        //dataPoints:
+                    }
+                ]
+            });
+            chart.render();
+        });
+
+        var Average = [];
+        /**/
+@foreach (var item in ViewBag.AverageList)
+        {
+<text>
+        /**/
+        /**/
+        /**/
+        Average.push({ label: "@item.Label", y:@item.Y });
+        /**/
+        /**/
+        /**/
+</text>
+    }
+        /**/
+
+        var chart = new CanvasJS.Chart("chartContainer2", {
+            animationEnabled: true,
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "Overoll Average Of Student"
+            },
+            axisY: {
+                title: "Mark",
+                suffix: "",
+                includeZero: false
+            },
+            axisX: {
+                title: "Student"
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "",
+                dataPoints: Average,
+            }]
+        });
+        chart.render();
+    }
+    </script>
+
+
+
+
+
+
+     <script>
+
+         $('#Btn_Script').click(function () {
+            debugger;
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1; //January is 0!
+            var yyyy = today.getFullYear();
+
+            if (dd < 10) {
+                dd = '0' + dd
+            }
+
+            if (mm < 10) {
+                mm = '0' + mm
+            }
+
+            today = mm + '/' + dd + '/' + yyyy;
+            var students = @Html.Raw(Json.Encode(Model));
+            document.getElementById("ScriptText").innerText = "";
+            var scr;
+            scr = "Aptitude  Score  " + today + "\n";
+            scr = scr + "============================" + "\n"
+            for (var i = 0; i < students.length; i++) {
+                var no = i +1;
+                var student = students[i];
+                scr += no+". "+student.Name + " " + student.Category + " " + student.Markscored + "/" + student.Total+"\n";
+            }
+
+       
+            document.getElementById("ScriptText").innerHTML = scr;
+        });
+</script>
+}
+
